@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>All Products - RedStore</title>
+	<link rel="stylesheet" type="text/css" href="Toko_Online.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"> -->
+	<script src="https://kit.fontawesome.com/4fb40c7074.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+	
+	<div class="container">
+	<div class="navbar">
+		<div class="logo">
+			<a href="Toko_Online.html"><img src="Gambar/logo.png" width="125px"></a>
+		</div>
+		<nav>
+			<ul id="MenuItems">
+				<li><a href="Toko_Online.html">Home</a></li>
+				<li><a href="products.html">Products</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">Contact</a></li>
+				<li><a href="account.html">Account</a></li>
+			</ul>
+		</nav>
+		<a href="cart.html"><img src="Gambar/basketball-ring-logo.png" width="30px" height="30px"></a>
+		<img src="Gambar/menu.png" class="menu-icon" onclick="menutoggle()">
+	</div>
+	</div>
+
+	<!---Cart Items Details--->
+	<div class="small-container cart-page">
+		
+		<table>
+			<tr>
+				<th>Product</th>
+				<th>Quantity</th>
+				<th>Price</th>
+			</tr>
+			<tr>
+				<td>
+					<div class="cart-info">
+						<img src="Gambar/adidas-harden-stepback-james-removebg-preview.png">
+						<div>
+							<p>Adidas Harden StepBack James</p>
+							<small>Price: $50.00</small>
+							<br>
+							<a href="">Remove</a>
+						</div>
+					</div>
+				</td>
+				<td><input type="number" value="1"></td>
+				<td>$50.00</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="cart-info">
+						<img src="Gambar/anta-2018-klay-thompson-kt3-low-removebg-preview.png">
+						<div>
+							<p>Anta 2018 Klay Thompson Kt3 Low</p>
+							<small>Price: $75.00</small>
+							<br>
+							<a href="">Remove</a>
+						</div>
+					</div>
+				</td>
+				<td><input type="number" value="1"></td>
+				<td>$75.00</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="cart-info">
+						<img src="Gambar/air-jordan-1-flyknit-re2pect-removebg-preview.png">
+						<div>
+							<p>Air Jordan 1 Flyknit Re2pect</p>
+							<small>Price: $75.00</small>
+							<br>
+							<a href="">Remove</a>
+						</div>
+					</div>
+				</td>
+				<td><input type="number" value="1"></td>
+				<td>$75.00</td>
+			</tr>
+		</table>
+
+		<div class="total-price">
+			
+			<table>
+				<tr>
+					<td>Total Price</td>
+					<td>$200.00</td>
+				</tr>
+				<tr>
+					<td>Tax</td>
+					<td>$30.00</td>
+				</tr>
+				<tr>
+					<td>Total</td>
+					<td>$230.00</td>
+				</tr> 
+			</table>
+		</div>
+
+	</div>
+		
+	<!---footer--->
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>Download Our App</h3>
+					<p>Download App for Android and ios mobile phone.</p>
+					<div class="app-logo">
+						<img src="Gambar/play-store.png">
+						<img src="Gambar/app-store.png">
+					</div>
+				</div>
+				<div class="footer-col-2">
+					<img src="logo/ss-removebg-preview.png">
+					<p>Our purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.
+					</p>
+				</div>
+				<div class="footer-col-3">
+					<h3>Useful Links</h3>
+					<ul>
+						<li>Coupons</li>
+						<li>Blog post</li>
+						<li>Return Policy</li>
+						<li>Join Affiliate</li>
+					</ul>
+				</div>
+				<div class="footer-col-4">
+					<h3>Follow us</h3>
+
+						<ul>
+							<li>
+								<i class="fa-brands fa-facebook"></i>
+								<a class="ulli" href="https://www.facebook.com/">Facebook</a>
+								
+							</li>
+							<li>
+								<i class="fa-brands fa-twitter"></i>
+								<a class="ulli" href="https://www.twitter.com/">Twitter</a>
+								
+							</li>
+							<li>
+								<i class="fa-brands fa-instagram"></i>
+								<a class="ulli" href="https://www.instagram.com/">Instagram</a>
+								
+							</li>
+							<li>
+								<i class="fa-brands fa-youtube"></i>
+								<a class="ulli" href="https://www.youtube.com/">YouTube</a>
+								
+							</li>
+						</ul>
+					
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">Copyright 2023 - Fariska Raihan</p>
+		</div>
+	</div>
+<!---js for toogle menu--->
+
+	<script type="text/javascript">
+		var MenuItems = document.getElementById ("MenuItems");
+
+		MenuItems.style.maxHeight = "0px";
+		function menutoggle (argument) {
+			if(MenuItems.style.maxHeight == "0px")
+				{
+					MenuItems.style.maxHeight = "200px";
+				}
+			else
+				{
+					MenuItems.style.maxHeight = "0px";
+				}
+		}
+	</script>
+
+</body>
+</html><
